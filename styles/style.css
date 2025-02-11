@@ -7,6 +7,9 @@
     --spacing3: 12px;
     --spacing4: 16px;
     
+    --radius1: 8px;
+    --radius2: 12px;
+
     --border-size: 1px;
 }
 
@@ -40,25 +43,41 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Content */
 
+/* Lists */
+.sidebar-link-list li {
+    list-style-type: none;
+}
+
 /* Articles */
 article, .sidebar-chunk {
     margin: var(--spacing4);
     padding: var(--spacing2) var(--spacing4);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--radius1);
     background-color: var(--foreground-color);
 }
 
-/* Basic styles */
-.container {
+/* Buttons */
+button {
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--radius1);
+    padding: var(--spacing2);
+    background-color: var(--color1);
+}
+
+/* Dynamic Content */
+content {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing4);
 }
 
+.main-content {
+    width: 100%;
+}
+
 .sidebar-chunk {
     width: 100%;
-    padding: 20px;
 }
 
 /* Media query for larger screens */
@@ -78,7 +97,7 @@ article, .sidebar-chunk {
     }
 
     /* Container */
-    .container {
+    .content {
         flex-wrap: nowrap;
         gap: calc(var(--spacing4) * 2)
     }

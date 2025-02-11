@@ -4,27 +4,35 @@
     <head>
         <title>Home - evanmar</title>
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="themes/dark_theme.css">
+        <link id="theme-sheet" rel="stylesheet" href="themes/dark_theme.css">
     </head>
 
     <body>
         <div class="container">
-            <content class="main-content">
-                <h1 id="title">evanmar</h1>
-                <p>Welcome to my website!</p>
-        
-                <article>
-                    <h1>About</h1>
-                    <p>This website hosts all of my goodies and stuff. So yeah.</p>
-                </article>        
+            <content>
+                <div class="main-content">
+                    <h1 id="title">evanmar</h1>
+                    <p>Welcome to my website!</p>
+            
+                    <article>
+                        <h2>About</h2>
+                        <p>This website hosts all of my goodies and stuff</p>
+                    </article>        
+                </div>
 
-                <p>So... what's the move?</p>
-                <p>It's hard to say-- some might say that you just move on. Live and forget. But who knows, you might find something you like.</p>
+                <div class="sidebar-chunk right">
+                    <h4>Links</h4>
+
+                    <ul class="sidebar-link-list">
+                        <li><a href="#">Pages</a></li>
+                    </ul>
+
+                    <h4>Theme</h4>
+                    <button id="theme-button">Dark</button>
+                </div>    
             </content>
-
-            <div class="sidebar-chunk left">
-                <p>Whatttt</p>
-            </div>
         </div>
+
+        <script src="theme-loader.js"></script>
     </body>
 </html>
