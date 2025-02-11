@@ -91,7 +91,7 @@ content {
 }
 
 /* Media query for larger screens */
-@media (min-width: 800px) {
+@media (min-width: 50em) {
     #title {
         margin-bottom: var(--spacing4);
     }
@@ -110,10 +110,13 @@ content {
     }
 
     /* Container */
+    .container {
+        max-width: 50em;
+    }
+    
     content {
         flex-wrap: nowrap;
         gap: var(--spacing4);
-        max-width: 50em;
     }
 
     .main-content {
