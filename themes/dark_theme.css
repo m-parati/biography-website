@@ -1,0 +1,9 @@
+:root {
+    --background-color: rgb(21, 27, 39);
+
+    --foreground-color: rgb(36, 37, 44);
+    --border-color: rgb(71, 71, 71);
+
+    --header-text-color: white;
+    --text-color: #bebebe;
+}
