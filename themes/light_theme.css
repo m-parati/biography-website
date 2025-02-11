@@ -4,7 +4,9 @@
     --foreground-color: rgb(191, 191, 191);
     --border-color: rgb(0, 0, 0);
 
+    --header-text-color: rgb(0, 0, 0);
     --text-color: rgb(0, 0, 0);
 
-    --primary-color: lightblue
+    --color1: rgb(52, 99, 255);
+    --color2: rgb(23, 45, 116);
 }

@@ -16,22 +16,23 @@
 body {
     color: var(--text-color);
     background-color: var(--background-color);
-    margin: 0;
+    margin: 1em;
 }
 
 content {
     display: block;
-    max-width: 50em;
-    margin: auto;
+    margin-bottom: var(--spacing4);
 }
 
 .container {
-    margin: 2em;
+    max-width: 40em;
+    margin: auto;
 }
 
 /* Titles and Headings */
 #title {
     text-align: center;
+    margin-bottom: 0;
 
     padding-bottom: var(--spacing2);
     border-bottom: solid var(--border-color) 1px;
@@ -50,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Articles */
 article, .sidebar-chunk {
-    margin: var(--spacing4);
     padding: var(--spacing2) var(--spacing4);
     border: var(--border-size) solid var(--border-color);
     border-radius: var(--radius1);
@@ -61,8 +61,13 @@ article, .sidebar-chunk {
 button {
     border: var(--border-size) solid var(--border-color);
     border-radius: var(--radius1);
-    padding: var(--spacing2);
+    padding: var(--spacing3) var(--spacing4);
     background-color: var(--color1);
+    color: white;
+}
+
+button:hover {
+    background-color: var(--color2);
 }
 
 /* Dynamic Content */
@@ -81,7 +86,10 @@ content {
 }
 
 /* Media query for larger screens */
-@media (min-width: 900px) {
+@media (min-width: 800px) {
+    #title {
+        margin-bottom: var(--spacing4);
+    }
 
     /* Sidebars */
     .sidebar-chunk {
@@ -97,9 +105,10 @@ content {
     }
 
     /* Container */
-    .content {
+    content {
         flex-wrap: nowrap;
-        gap: calc(var(--spacing4) * 2)
+        gap: var(--spacing4);
+        max-width: 50em;
     }
 
     .main-content {
