@@ -9,4 +9,6 @@
 
     --color1: rgb(52, 99, 255);
     --color2: rgb(23, 45, 116);
+
+    --gradient-chroma: linear-gradient(45deg, rgb(114, 231, 255) 35%, rgb(225, 74, 255) 65%);
 }

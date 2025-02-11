@@ -36,6 +36,11 @@ content {
 
     padding-bottom: var(--spacing2);
     border-bottom: solid var(--border-color) 1px;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-chroma);
 }
 
 h1, h2, h3, h4, h5, h6 {
