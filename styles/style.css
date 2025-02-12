@@ -31,7 +31,7 @@ content {
 
 .main-content {
     background-color: var(--background-color);
-    padding: var(--spacing4) 2em;
+    padding: var(--spacing4) 1em;
 }
 
 #page {
@@ -152,11 +152,28 @@ article {
     background-color: var(--foreground-color);
 }
 
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
 /* Buttons */
 button {
+    display: block;
     border: var(--border-size) solid var(--border-color);
     border-radius: var(--radius1);
     padding: var(--spacing3) var(--spacing4);
+    margin: var(--spacing4) 0;
     background-color: var(--color1);
     color: white;
 }
