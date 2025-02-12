@@ -25,12 +25,17 @@ body {
 /* Content */
 content {
     display: block;
-    max-width: 35em;
+    /* max-width: 35em; */
     margin: auto;
 }
 
-#page-content {
-    margin: 1em;
+.main-content {
+    background-color: var(--background-color);
+    padding: var(--spacing4) 2em;
+}
+
+#page {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Navigation */
@@ -84,6 +89,9 @@ footer {
     object-position: top;
     width: 100%;
     height: 100%;
+
+    position: fixed;
+    z-index: -1;
 }
 
 /* Titles and Headings */
@@ -177,6 +185,10 @@ hr {
     /* Content */
     content {
         max-width: 50em;
+    }
+
+    .main-content {
+        padding: 2em 4em;
     }
 
     /* Article Formatting */
