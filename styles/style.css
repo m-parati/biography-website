@@ -30,7 +30,7 @@ content {
 }
 
 #page-content {
-    padding: 1em;
+    margin: 1em;
 }
 
 /* Navigation */
@@ -51,6 +51,14 @@ nav {
 nav #title{
     padding: 0;
     margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: var(--spacing2);
+    background-color: var(--foreground-color);
+    border-top: var(--border-size) solid var(--border-color);
 }
 
 /* Banner */
@@ -112,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 ul {
     list-style: none;
     padding: 0;
+    margin: var(--spacing2) 0;
 }
 
 /* Gallery Image */
@@ -126,20 +135,13 @@ article {
     clear: both;
     display: block;
 
+    margin: var(--spacing4) 0;
+
     padding: var(--spacing2) var(--spacing4);
 
     border: var(--border-size) solid var(--border-color);
     border-radius: var(--radius2);
     background-color: var(--foreground-color);
-}
-
-article > * {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-article:not(:first-child), .float:not(:first-child) { /* Space between consecutive articles */
-    margin-top: var(--spacing4);
 }
 
 /* Buttons */
@@ -189,7 +191,7 @@ hr {
     }
 
     .float {
-        margin-bottom: var(--spacing4);
+        margin: var(--spacing4) 0;
     }
 
     .float.right.stack {
