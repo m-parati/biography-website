@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 article, .sidebar-chunk {
     padding: var(--spacing2) var(--spacing4);
     border: var(--border-size) solid var(--border-color);
-    border-radius: var(--radius1);
+    border-radius: var(--radius2);
     background-color: var(--foreground-color);
 }
 
@@ -73,6 +73,7 @@ button {
 
 button:hover {
     background-color: var(--color2);
+    cursor: pointer;
 }
 
 /* Dynamic Content */
