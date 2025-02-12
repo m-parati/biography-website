@@ -8,36 +8,50 @@
     </head>
 
     <body>
-        <div class="container">
-            <h1 id="title">evanmar</h1>
+        <div id="banner">
+            <img src="images/banners/starry-banner.jpg" alt="Banner">
+        </div>
 
+        <div id="nav-holder"></div>
+        <script src="nav-loader.js"></script>
+
+        <div id="page-content">
             <content>
-                <div class="main-content">
-                    <p>Welcome to my website!</p>
-            
-                    <article>
-                        <h2>About</h2>
-                        <p>This website hosts all of my goodies and stuff</p>
-                        <p>Feel free to explore!</p>
-                    </article>        
-                </div>
-
-                <div class="sidebar-chunk right">
-                    <h4>Links</h4>
-
-                    <ul class="sidebar-link-list">
-                        <li><a href="#">Pages</a></li>
+                <article class="float right">
+                    <h2>Links</h2>
+                    <p>Here are some of my projects:</p>
+                    <ul>
+                        <li><a href="projects/project1.html">Project 1</a></li>
+                        <li><a href="projects/project2.html">Project 2</a></li>
+                        <li><a href="projects/project3.html">Project 3</a></li>
                     </ul>
+                </article>
 
-                    <h4>Theme</h4>
-                    <button id="theme-button">Dark</button>
-                </div>    
-            </content>
+                <h2>Welcome</h2>
+                <p>Welcome to my website!</p>
 
-            <p>Something interesting</p>
-            <article>
-                <p>Greetings!</p>
-            </article>
+                <hr class="clear">
+                <img class="gallery float right stack" src="images/dog1.JPG">
+                <h2>Hello</h2>
+                <p>Here is a picture of my dog:</p>
+
+                <article>
+                    <h2>About</h2>
+                    <p>This website hosts all of my goodies and stuff</p>
+                    <p>Feel free to explore!</p>
+                </article>
+
+                <article>
+                    <h2>About</h2>
+                    <p>This website hosts all of my goodies and stuff</p>
+                    <p>Feel free to explore!</p>
+                </article>
+    
+                <p>Something interesting</p>
+                <article>
+                    <p>Greetings!</p>
+                </article>
+            </content>    
         </div>
 
         <script src="theme-loader.js"></script>
