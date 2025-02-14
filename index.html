@@ -3,44 +3,44 @@
 <html>
     <head>
         <title>Home - evanmar</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link id="theme-sheet" rel="stylesheet" href="themes/dark_theme.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link id="theme-sheet" rel="stylesheet" href="/themes/dark_theme.css">
     </head>
 
     <body>
         <div id="banner">
-            <img src="images/banners/starry-banner.jpg" alt="Banner">
+            <img src="/images/banners/starry-banner.jpg" alt="Banner">
         </div>
 
         <div id="nav-holder"></div>
-        <script src="nav-loader.js"></script>
 
-        <div id="page-content">
-            <content>
+        <div id="page">
+            <content class="main-content">
                 <article class="float right">
                     <h2>Links</h2>
-                    <p>Here are some of my projects:</p>
+                    
                     <ul>
-                        <li><a href="projects/project1.html">Project 1</a></li>
-                        <li><a href="projects/project2.html">Project 2</a></li>
-                        <li><a href="projects/project3.html">Project 3</a></li>
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
                     </ul>
                 </article>
-
+    
                 <h2>Welcome</h2>
                 <p>Welcome to my website!</p>
-
+    
                 <hr class="clear">
-                <img class="gallery float right stack" src="images/dog1.JPG">
+                <img class="gallery float right stack" src="/images/dog1.JPG">
                 <h2>Hello</h2>
                 <p>Here is a picture of my dog:</p>
-
+    
                 <article>
                     <h2>About</h2>
                     <p>This website hosts all of my goodies and stuff</p>
                     <p>Feel free to explore!</p>
                 </article>
-
+    
                 <article>
                     <h2>About</h2>
                     <p>This website hosts all of my goodies and stuff</p>
@@ -49,11 +49,15 @@
     
                 <p>Something interesting</p>
                 <article>
-                    <p>Greetings!</p>
+                    <h3>Theme</h3>
+                    <button id="theme-button">Click me!</button>
                 </article>
             </content>    
         </div>
 
-        <script src="theme-loader.js"></script>
+        <div id="footer-holder"></div>
+
+        <script src="/scripts/theme-loader.js"></script>
+        <script src="/scripts/nav-loader.js"></script>
     </body>
 </html>
