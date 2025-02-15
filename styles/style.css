@@ -10,7 +10,8 @@
     --radius1: 8px;
     --radius2: 12px;
 
-    --border-size: 1px;
+    --border-size: 2px;
+    --button-inset-size: 3px;
 
     --banner-height: 16em;
     --nav-height: 3em;
@@ -36,6 +37,11 @@ content {
 
 #page {
     background-color: var(--background-color);
+}
+
+/* Content Margins */
+p, h1, h2, h3, h4, h5, h6 {
+    margin: var(--spacing2) 0;
 }
 
 /* Navigation */
@@ -115,10 +121,15 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
+.block {
+    display: block;
+    width: 100%;
+}
+
 .float {
     display: block;
     box-sizing: border-box;
-    width: 256px;
+    width: 20em;
     margin: auto;
 }
 
@@ -146,7 +157,6 @@ article {
     display: block;
 
     margin: var(--spacing4) 0;
-
     padding: var(--spacing2) var(--spacing4);
 
     border: var(--border-size) solid var(--border-color);
@@ -158,6 +168,8 @@ article {
 a {
     color: var(--link-color);
     text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -172,17 +184,31 @@ a:visited {
 /* Buttons */
 button {
     display: block;
+    padding: var(--spacing3) var(--spacing4);
+    margin: var(--spacing2) 0;
+    margin-bottom: calc(var(--spacing2) + var(--button-inset-size));
+
+    background-color: var(--color1);
+    color: var(--header-text-color);
+
     border: var(--border-size) solid var(--border-color);
     border-radius: var(--radius1);
-    padding: var(--spacing3) var(--spacing4);
-    margin: var(--spacing4) 0;
-    background-color: var(--color1);
-    color: white;
+    box-shadow: 0 var(--button-inset-size) 0 var(--border-color);
+
+}
+
+button:active {
+    filter: brightness(0.5);
+    box-shadow: none;
+    transform: translateY(var(--button-inset-size));
 }
 
 button:hover {
-    background-color: var(--color2);
     cursor: pointer;
+}
+
+button:hover:not(:active) {
+    filter: brightness(0.8);
 }
 
 /* Alignment */
