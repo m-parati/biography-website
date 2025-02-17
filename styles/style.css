@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     box-sizing: border-box;
     width: 20em;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -142,6 +143,13 @@ ul {
     list-style: none;
     padding: 0;
     margin: var(--spacing2) 0;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing2);
 }
 
 /* Gallery Image */
@@ -185,7 +193,6 @@ a:visited {
 button {
     display: block;
     padding: var(--spacing3) var(--spacing4);
-    margin: var(--spacing2) 0;
     margin-bottom: calc(var(--spacing2) + var(--button-inset-size));
 
     background-color: var(--color1);
@@ -224,7 +231,13 @@ hr {
     margin-bottom: var(--spacing4);
 }
 
-/* Media query for larger screens */
+/* Media Queries */
+@media (max-width: 50em) {
+    .float.stack:not(:first-child) {
+        margin-top: var(--spacing4);
+    }
+}
+
 @media (min-width: 50em) {
 
     /* Content */
@@ -237,12 +250,12 @@ hr {
     }
 
     /* Article Formatting */
-    .right {
+    .float.right {
         float: right;
         margin-left: var(--spacing4);
     }
     
-    .left {
+    .float.left {
         float: left;
         margin-right: var(--spacing4);
     }
@@ -261,5 +274,9 @@ hr {
 
     .float:not(:first-child) {
         margin-top: 0;
+    }
+
+    #title {
+        text-align: left;
     }
 }
